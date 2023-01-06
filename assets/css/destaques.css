@@ -1,0 +1,100 @@
+.destaques {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: calc(100vh - 50px);
+  gap: 0.5rem;
+  padding: 0 2rem;
+}
+
+.destaques__titulo {
+  color: #fdfdfd;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: .6rem;
+  width: 100%;
+}
+
+.caixa {
+  display: flex;
+  align-items: flex-end;
+}
+
+.destaques__principal {
+  background-image: url(../img/fortnite.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-column: 1 / span 3;
+  grid-row: span 2;
+  cursor: pointer;
+}
+
+.destaques__secundario:nth-child(2) {
+  background-image: url('../img/pubg.jpg');
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.destaques__secundario:nth-child(3) {
+  background-image: url('../img/slack.png');
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.destaques__secundario:nth-child(4) {
+  background-image: url('../img/whatsapp.png');
+  background-size: cover;
+  background-position: center;
+  grid-column: 4;
+  grid-row: 3;
+  cursor: pointer;
+}
+
+.destaques__secundario:nth-child(5) {
+  background-image: url('../img/cs-go.jpg');
+  background-size: cover;
+  background-position: center;
+  grid-column: 3;
+  grid-row: 3;
+  cursor: pointer;
+}
+
+.destaques__principal:hover, .destaques__secundario:hover {
+  transform: scale(1.015);
+}
+
+.destaques__categorias {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  cursor: pointer;
+}
+
+.destaques__categorias___lista {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.destaques__categorias___item {
+  box-shadow: 0 0 3px #333333;
+  align-items: center;
+  background-color: #fdfdfd;
+  border-left: 5px solid transparent;
+  display: flex;
+  color: #333333;
+  padding: 1rem;
+  width: 50%;
+  transition: all 0.4s;
+}
+
+.destaques__categorias___item:hover {
+  opacity: 0.7;
+}
+
+.destaques__categorias___link {
+  color: inherit;
+}

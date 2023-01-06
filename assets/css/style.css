@@ -1,0 +1,35 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    grid-area: h;
+    padding: 0 2rem;
+}
+
+.app {
+    background: #f1f1f1;
+    display: grid;  
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: 
+        "h"
+        "m"
+        "f"
+    ;
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
+}
+
+.app::-webkit-scrollbar {
+    display: none;
+}
+
+.cabecalho {
+    grid-area: h;
+}
+ 
+.conteudo {
+    grid-area: m;
+}
+
+.rodape {
+    grid-area: f;
+}
